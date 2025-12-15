@@ -1,57 +1,59 @@
-# Установка Django
+📚 Магазин разных товаров - Django Web Application
+Веб-приложение Store
+Реализуется функционал ДЗ 44.
+CRUD через CBV
+Тесты
 
-pip install django
-poetry add django
+🚀 Быстрый старт
+Предварительные требования
+Python 3.13+
+SQLite (по умолчанию SQLite)
+pip (менеджер пакетов Python)
+Установка
 
-# Проверка установки
-django-admin --version
+Клонирование репозитория
+git clone https://github.com/onpavlova/django-appcbv.git
+cd django-appcbv
 
-# Создание проекта
-django-admin startproject config .
+Создание виртуального окружения
+python -m venv venv
+# Для Windows:
+venv\Scripts\activate
+# Для Linux/Mac:
+source venv/bin/activate
 
-# Запуск проекта
-python manage.py runserver
+Установка зависимостей
+pip install -r requirements.txt
 
-# Создание приложения
-python manage.py startapp store_app
-
-# Применение миграции
+Настройка базы данных
 python manage.py migrate
 
-# Создание миграции
-python manage.py makemigrations
-
-
-# Создание суперпользователя
+Создание суперпользователя
 python manage.py createsuperuser
 
-# Интерактивная консоль Django
-python manage.py shell
-
-# Создание загрузки данных в бд из json
-# 1. создать файл store_fixture.json
-python manage.py loaddata ./store_fixture.json
-
-# Выгрузка даннных в json
-python manage.py dumpdata > ./store_fixture.json
-python manage.py dumpdata --indent 4> ./store_fixture.json
-python manage.py dumpdata store_app --indent 4> ./store_fixture.json
-python manage.py dumpdata store_app.Product --indent 4> ./store_fixture.json
-
-
-<h5><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h5>
-
-# Базовая команда (ищет store_app/fixtures/store_fixture.json)
+Загрузка тестовых данных (опционально)
 python manage.py load_store_data
 
-# Указать конкретный файл
-python manage.py load_store_data --file=/путь/к/файлу.json
+Запуск сервера разработки
+python manage.py runserver
 
-# Очистить старые данные перед загрузкой
-python manage.py load_store_data --clear
+Приложение будет доступно по адресу: http://127.0.0.1:8000
 
-# Указать другое приложение
-python manage.py load_store_data --app=other_app
+📝 Админ-панель
+Админ-панель доступна по адресу: http://127.0.0.1:8000/admin
+Функции админки:
+Управление товарами, категориями
+Управление пользователями
+Bulk actions (массовые операции)
 
-# Показать help
-python manage.py load_store_data --help
+🎨 Фронтенд
+Используемые технологии
+Шаблоны: Django Templates
+Стили: Bootstrap 5 + Custom CSS
+
+Основные страницы
+Главная (/store/) - иинформация о продукте
+Все товары (/store/products) - список товаров
+Добавить товар (/store/products/add/) - добавление товара
+Редактировать товар (/store/products/{id}/edit/) - редактирование товара
+Детали товаров (/store/products/{id}/) - полная информация о товаре

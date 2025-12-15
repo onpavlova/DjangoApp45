@@ -11,6 +11,7 @@
                 <p>{{ product.description|truncatechars:30}}</p>
                 <small>Цена: {{ product.price }} </small>
                 <a href="{% url 'product_edit' product.id %}" class="btn btm-sm btn-warning">Редактировать</a>
+                <a href="{% url 'product_delete' product.id %}" class="btn btm-sm btn-danger">Удалить</a>
 
             </li>
         {% empty %}
