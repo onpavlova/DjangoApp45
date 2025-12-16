@@ -8,10 +8,6 @@ from .models import Product, Category
 from .forms import ProductForm, ProductModelForm, ProductDeleteForm
 
 
-# def index(request):
-#     """Главная страница."""
-#     return render(request, 'store_app/index.html')
-
 class IndexTemplateView(TemplateView):
     template_name = "store_app/index.html"
 
