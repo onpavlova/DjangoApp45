@@ -8,10 +8,6 @@ from .models import Product, Category
 from .forms import ProductForm, ProductModelForm, ProductDeleteForm
 
 
-# def index(request):
-#     """Главная страница."""
-#     return render(request, 'store_app/index.html')
-
 class IndexTemplateView(TemplateView):
     template_name = "store_app/index.html"
 
@@ -38,6 +34,7 @@ class ProductDetailView(DetailView):
     template_name = 'store_app/product_detail.html'
     context_object_name = 'product'
 
+
 class ProductCreateView(CreateView):
     template_name = 'store_app/product_add.html'
     form_class = ProductModelForm
@@ -47,6 +44,7 @@ class ProductCreateView(CreateView):
         """Добавляем сообщение об успешном создании поста."""
         messages.success(self.request, 'Товар успешно создан')
         return super().form_valid(form)
+
 
 class ProductUpdateView(UpdateView):
     model = Product
@@ -58,6 +56,7 @@ class ProductUpdateView(UpdateView):
         """Добавляем сообщение об успешном создании поста."""
         messages.success(self.request, 'Товар успешно обновлен')
         return super().form_valid(form)
+
 
 class ProductDeleteView(DeleteView):
     model = Product

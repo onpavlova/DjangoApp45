@@ -18,6 +18,7 @@ def product_1(category_1):
         category=category_1
     )
 
+
 @pytest.fixture
 def product_2(category_1):
     return Product.objects.create(

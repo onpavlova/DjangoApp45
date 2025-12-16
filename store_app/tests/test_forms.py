@@ -32,6 +32,7 @@ def test_productmodalform_valid(category_1):
 
     assert form.is_valid()
 
+
 @pytest.mark.django_db
 def test_productmodalform_valid_negative(category_1):
     """Проверка валидации ProductModalForm"""

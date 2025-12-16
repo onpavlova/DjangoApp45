@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9677c449-2b4a-4ef1-a913-4e5662781e04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DjangoApp44.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_app/templates/store_app/product_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_app/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_app/tests/test_forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_app/tests/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_app/tests/test_templates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_app/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoApp37.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/789c48c5-0649-40d3-bc7a-2d68dc909f45.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/789c48c5-0649-40d3-bc7a-2d68dc909f45/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DjangoApp44.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoApp44.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/README2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store_app/templates/store_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/store_app/templates/store_app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store_app/templates/store_app/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/store_app/templates/store_app/product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store_app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +34,12 @@
     &quot;assignee&quot;: &quot;onpavlova&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/onpavlova/Django-app-44.git",
-    "accountId": "606c0105-8cdb-4e63-9a0b-4d575b32c8b7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/onpavlova/Django-app-44.git&quot;,
+    &quot;accountId&quot;: &quot;606c0105-8cdb-4e63-9a0b-4d575b32c8b7&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -68,28 +48,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ONP/PycharmProjects/DjangoApp44",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ONP/PycharmProjects/DjangoApp44&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ONP\PycharmProjects\DjangoApp44\store_app" />
@@ -114,6 +94,7 @@
       <updated>1765779373123</updated>
       <workItem from="1765779374384" duration="8080000" />
       <workItem from="1765812173224" duration="9080000" />
+      <workItem from="1765869250747" duration="1594000" />
     </task>
     <servers />
   </component>

@@ -22,6 +22,7 @@ class ProductForm(forms.Form):
 
     )
 
+
 class ProductModelForm(forms.ModelForm):
     class Meta:
         model = Product
@@ -41,6 +42,7 @@ class ProductModelForm(forms.ModelForm):
             'category': forms.Select(attrs={'class': 'form-control'}),
         }
 
+
     def clean_name(self):
         """Кастомная валидация name."""
         name = self.cleaned_data.get('name')
@@ -48,26 +50,13 @@ class ProductModelForm(forms.ModelForm):
             raise ValidationError('Заголовок должен содержать минимум 5 символов')
         return name
 
+
     def clean_price(self):
         """Кастомная валидация price."""
         price = self.cleaned_data.get('price')
         if price < 0:
             raise ValidationError('Цена должна быть положительной')
         return price
-
-    # def clean(self):
-    #     """Общая валидация."""
-    #     forbidden_words = ['крипта', 'казино']
-    #     data = super().clean()
-    #     content = data.get('content')
-    #     title = data.get('title')
-    #
-    #     if content or title:
-    #         for word in forbidden_words:
-    #             if word in content.lower():
-    #                 raise ValidationError(f'Контент не должен содержать слово "{word}"')
-    #             if word in title.lower():
-    #                 raise ValidationError(f'Заголовок не должен содержать слово "{word}"')
 
 
 class ProductDeleteForm(forms.Form):

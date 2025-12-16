@@ -4,6 +4,7 @@ from decimal import Decimal
 
 from .models import Product, Category
 
+
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name','description','price', 'category']

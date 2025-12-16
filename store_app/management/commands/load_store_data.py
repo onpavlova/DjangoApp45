@@ -10,6 +10,7 @@ from django.db.models import ForeignKey, ManyToManyField
 class Command(BaseCommand):
     help = 'Загружает данные из JSON файла store_fixture.json в базу данных'
 
+
     def add_arguments(self, parser):
         parser.add_argument(
             '--file',
@@ -27,6 +28,7 @@ class Command(BaseCommand):
             action='store_true',
             help='Очистить существующие данные перед загрузкой',
         )
+
 
     def handle(self, *args, **options):
         # Определяем путь к файлу
@@ -86,6 +88,7 @@ class Command(BaseCommand):
             import traceback
             traceback.print_exc()
 
+
     def clear_existing_data(self, data):
         """Очищает существующие данные для моделей из фикстуры"""
         processed_models = set()
@@ -100,6 +103,7 @@ class Command(BaseCommand):
                     self.stdout.write(f'Удалено {deleted_count} записей из {model_name}')
                 except LookupError:
                     pass
+
 
     def load_data(self, data):
         """Основной метод загрузки данных"""
@@ -141,6 +145,7 @@ class Command(BaseCommand):
                 raise
 
         return loaded_count
+
 
     def process_relationships(self, Model, fields):
         """Обрабатывает ForeignKey и ManyToMany отношения"""
