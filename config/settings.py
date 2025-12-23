@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'store_app.apps.StoreAppConfig',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +101,27 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
+    'loggers': {
+        'store_app': {  # Имя вашего приложения
+            'handlers': [],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
@@ -116,3 +139,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+# Настройки CELERY
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0' # redis-server
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_TASK_IGNORE_RESULT = False
+CELERY_TIMEZONE = 'UTC'
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT = 30 * 60
