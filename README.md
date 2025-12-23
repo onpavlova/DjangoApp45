@@ -12,8 +12,8 @@ pip (менеджер пакетов Python)
 Установка
 
 Клонирование репозитория
-git clone https://github.com/onpavlova/django-appcbv.git
-cd django-appcbv
+git clone https://github.com/onpavlova/DjangoApp45.git
+cd DjangoApp45
 
 Создание виртуального окружения
 python -m venv venv
@@ -38,6 +38,12 @@ python manage.py load_store_data
 python manage.py runserver
 
 Приложение будет доступно по адресу: http://127.0.0.1:8000
+
+Требуется установленный локально или поднятый контейнер docker с redis
+
+Запуск celery
+celery -A config  worker --loglevel=info --pool=solo -E
+
 
 📝 Админ-панель
 Админ-панель доступна по адресу: http://127.0.0.1:8000/admin
